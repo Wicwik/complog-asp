@@ -39,7 +39,6 @@ has_pen(animal(X, A), Y) :- require(X, Z), has(Y, Z), animal(X, A).
 :- has_pen(animal(X, _), Y), has_pen(animal(Z, _), Y), carnivore(X), not large(Z), X != Z.
 
 % c)
-% together()
-:- has_pen(animal(X, _), Y), has_pen(animal(X, _), Z), Y != Z.
+- has_pen(animal(X, _), Y), - has_pen(animal(X, _), Z), Y != Z.
 
 #show has_pen/2.
